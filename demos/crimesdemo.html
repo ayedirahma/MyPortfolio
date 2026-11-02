@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crimes Prediction </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #111312;
+      --ink: #f2f0ea;
+      --muted: #9aa09b;
+      --border: #2a2e2b;
+      --primary: #7fcba0;
+    }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Inter", system-ui, sans-serif;
+      padding: 40px 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    h1 {
+      font-family: "Fraunces", serif;
+      font-weight: 400;
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin: 0 0 8px;
+      letter-spacing: -0.02em;
+    }
+    p {
+      color: var(--muted);
+      margin: 0;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .gallery {
+      width: 100%;
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+    .gallery-item {
+      background: #1a1d1b;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      display: block;
+    }
+    .caption {
+      margin-top: 16px;
+      text-align: center;
+      font-size: 1.1rem;
+      font-family: "Fraunces", serif;
+      color: var(--ink);
+    }
+    .back-btn {
+      margin-top: 60px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      background: transparent;
+      color: var(--ink);
+      text-decoration: none;
+      border: 1.5px solid var(--border);
+      border-radius: 999px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: 0.2s ease;
+    }
+    .back-btn:hover {
+      background: var(--ink);
+      color: var(--bg);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Crimes Prediction</h1>
+    <p>EDA and K-Means Clustering on US Crime Data</p>
+  </div>
+
+    <div class="gallery">
+    <!-- Dashboard 1 -->
+    <div class="gallery-item">
+      <img src="../images/crimes/dataset.png" alt="Dataset Overview">
+      <div class="caption">Dataset Overview</div>
+    </div>
+
+    <!-- Dashboard 2 -->
+    <div class="gallery-item">
+      <img src="../images/crimes/boxplot_list1.png" alt="Boxplot List 1">
+      <div class="caption">Boxplot List 1</div>
+    </div>
+
+    <!-- Dashboard 3 -->
+    <div class="gallery-item">
+      <img src="../images/crimes/boxplot_list2.png" alt="Boxplot List 2">
+      <div class="caption">Boxplot List 2</div>
+    </div>
+
+    <!-- Dashboard 4 -->
+    <div class="gallery-item">
+      <img src="../images/crimes/boxplot_list3.png" alt="Boxplot List 3">
+      <div class="caption">Boxplot List 3</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="../images/crimes/pairplot.png" alt="Pairplot for Crime Data">
+      <div class="caption">Pairplot  for Crime Data</div>
+    </div>
+    <div class="gallery-item">
+      <img src="../images/crimes/correlationpng.png" alt="Correlation Matrix">
+      <div class="caption">Correlation Matrix</div>
+    </div>
+    <div class="gallery-item">
+      <img src="../images/crimes/methodeducoude.png" alt="coude method to determine the optimal number of clusters">
+      <div class="caption">coude method to determine the optimal number of clusters</div>
+    </div>
+    <div class="gallery-item">
+      <img src="../images/crimes/kmeans.png" alt="silouhette score for different number of clusters">
+      <div class="caption">Silhouette Score for Different Number of Clusters</div>
+    </div>
+    <div class="gallery-item">
+      <img src="../images/crimes/pairplot2.png" alt="pairplot for k=2">
+      <div class="caption">Pairplot for k=2</div>
+    </div>
+    <div class="gallery-item">
+      <img src="../images/crimes/pairplot4.png" alt="  pairplot for k=4">
+      <div class="caption">Pairplot for k=4</div>
+    </div>
+    <div class="gallery-item">
+      <img src="../images/crimes/centredesclusters.png" alt="centroids of the clusters">
+      <div class="caption">Centroids of the Clusters</div>
+    </div>
+    <div class="gallery-item">
+      <img src="../images/crimes/analysefinale.png" alt="Final Analysis">
+      <div class="caption">Final Analysis</div>
+    </div>
+  </div>
+  <a href="../index.html" class="back-btn">
+    ← Back to Portfolio
+  </a>
+
+</body>
+</html>
