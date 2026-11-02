@@ -52,7 +52,7 @@
       images: [
         { src: "images/Ecantine/loginpage.png", caption: "login page" },
       ],
-      demoUrl: "demos/demo.html",
+      demoUrl: "",
       githubUrl: "https://github.com/ayedirahma/Restaurant_universitaire"
     },
     {
